@@ -1,0 +1,59 @@
+body {
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f368e0, #00d2d3); /* Gradient from pink to teal */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite;
+    color: #fff;
+    margin: 0;
+    height: 100vh;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    color: #ffffff;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+button {
+    display: inline-block;
+    background: #4b7bec; /* Light purple */
+    color: #fff;
+    width: 240px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    transition: background-color 0.3s, transform 0.2s, color 0.3s;
+}
+
+button:hover {
+    background-color: #3867d6; /* Darker purple on hover */
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

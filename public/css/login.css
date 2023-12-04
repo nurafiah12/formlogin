@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(135deg, #f368e0, #00d2d3); /* Gradient from pink to teal */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.login-page {
+    width: 400px;
+    padding: 4% 0 0;
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+}
+
+.form input {
+    outline: 0;
+    background: #f8f9fa; /* Light gray */
+    width: 100%;
+    border: 1px solid #ced4da;
+    margin: 0 0 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form input:focus {
+    border-color: #4b7bec; /* Light purple on focus */
+    background-color: #e2e6ea; /* Lighter gray on focus */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.login-button, .back-button {
+    text-transform: uppercase;
+    outline: 0;
+    width: 48%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-button {
+    background: #4b7bec;
+}
+
+.back-button {
+    background: #eb3b5a;
+}
+
+.login-button:hover, .back-button:hover {
+    background-color: #3867d6;
+    transform: scale(1.05);
+}
+
+.tombol button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #4b7bec;
+    width: 100%;
+    border: 0;
+    margin-top: 20px;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tombol button:hover {
+    background: #3867d6; /* Darker purple on hover */
+    transform: scale(1.05);
+}
+
+.tombol button a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@media (max-width: 600px) {
+    .login-page {
+        width: 80%;
+    }
+}
